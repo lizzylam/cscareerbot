@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+    <category>
+        <pattern>HI</pattern>
+        <template>Hello there! I am the student career bot for the department of Computer Science. 
+        <br></br><br></br>Before we get started, please tell me your name.
+        </template>
+    <category>
+        <pattern>HELLO</pattern>
+        <template>
+            <srai>HI</srai>
+        </template>
+    </category>
+    </category>
+    <category>
+        <pattern> *</pattern>
+        <template>Thanks <set name="name"><star/>!</set> 
+        <br></br><br></br>Please click on the "CS Career Picker" button, so we can help you find which computer science job is right for you!
+        <br></br><br></br> Please select "Learn About CS Careers" if you'd to know more about the jobs a CS degree has to offer!
+            <button>
+                <text>CS Career Picker</text>
+                <postback>CSCAREERQUESTIONS</postback>
+            </button> 
+            <button>
+                <text>Learn About CS Careers</text>
+                <postback>TOP5CSCAREERS</postback>
+            </button> 
+        </template>
+    </category>
+     <category>
+        <pattern>CSCAREERQUESTIONS</pattern>
+        <template>We will now ask you a series of questions to provide suggestions on a career to consider. Please select the "Begin" button, so we can get started!
+            <button>
+                <text>Begin</text>
+                <postback>FIRSTQUESTION</postback>
+            </button>
+        </template>
+    </category>
+    <category>
+        <pattern>FIRSTQUESTION</pattern>
+        <template>Do you prefer to see the visuals and graphics of the code written?
+            <button>
+                <text>Yes</text>
+                <postback>WEBDEVELOPERQUESTION</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>SOFTWAREDEVLOPERQUESTION</postback>
+            </button>
+        </template>
+    </category>
+    <category>
+        <pattern>WEBDEVELOPERQUESTION</pattern>
+        <template>Do you prefer to design websites over mobile applications? 
+            <button>
+                <text>Yes</text>
+                <postback>WEBDEVELOPERQUESTION2</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>MOBILEAPPDEVELOPERQUESTION</postback>
+            </button>
+        </template>
+    </category>
+    <category>
+        <pattern>PROGRAMMINGQUESTION</pattern>
+        <template> Do you prefer to utilize compiled or interpreted programming languages?
+            <button>
+                <text>Compiled</text>
+                <postback>MOBILEAPPDEVELOPERQUESTION</postback>
+            </button>
+            <button>
+                <text>Interpreted</text>
+                <postback>AIENGINEERQUESTION</postback>
+            </button>
+        </template>
+    </category>
+    <category>
+        <pattern>WEBDEVELOPERQUESTION2</pattern>
+        <template>Do you prefer working with HTML, CSS, and Javascript?
+            <button>
+                <text>Yes</text>
+                <postback>WEBDEVELOPERJOB</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>NOJOBMATCHED</postback>
+            </button>
+        </template>
+    </category>
+    <category>
+        <pattern>SOFTWAREDEVLOPERQUESTION</pattern>
+        <template>Do you prefer to work with APIS, databases, and servers?
+            <button>
+                <text>Yes</text>
+                <postback>SOFTWAREDEVELOPERJOB</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>PROGRAMMINGQUESTION</postback>
+            </button>
+        </template>
+    </category>
+    <category>
+        <pattern>AIENGINEERQUESTION</pattern>
+        <template>Do you enjoy probability, statistics, and analytics?
+            <button>
+                <text>Yes</text>
+                <postback>AIENGINEERJOB</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>PROGRAMMINGQUESTION2</postback>
+            </button>
+        </template>
+    </category>
+    <category>
+        <pattern>MOBILEAPPDEVELOPERQUESTION</pattern>
+        <template>Do you enjoy understanding the UI/UX design, and understanding the interactions with the databases/servers?
+            <button>
+                <text>Yes</text>
+                <postback>MOBILEAPPDEVELOPERJOB</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>PROGRAMMINGQUESTION2</postback>
+            </button>
+        </template>
+    </category>
+    <category>
+        <pattern>PROGRAMMINGQUESTION2</pattern>
+        <template>Do you enjoy focusing on coding or system design more?
+            <button>
+                <text>Coding</text>
+                <postback>NOJOBMATCHED</postback>
+            </button>
+            <button>
+                <text>System Design</text>
+                <postback>SYSTEMSARCHITECTQUESTION</postback>
+            </button>
+        </template>
+    </category>
+    <category>
+        <pattern>SYSTEMSARCHITECTQUESTION</pattern>
+        <template>Do you enjoy understanding the structure of a system along with its' impact to the business?
+            <button>
+                <text>Yes</text>
+                <postback>SYSTEMARCHITECTJOB</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>NOJOBMATCHED</postback>
+            </button>
+        </template>
+    </category>
+    <category>
+        <pattern>HELP</pattern>
+        <template>If you need further assistance, please reach out to an advisor by emailing csadvisors@wgu.edu or call 1-WGU-ADVIS to schedule an appointment.
+        </template>
+    </category>
+
+</aiml>

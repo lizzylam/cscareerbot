@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>ABOUTWEBDEVELOPERS</pattern>
+        <template>Web Developers are involved with the building, creating, and maintaining of websites. You would be working on the client side of the website, as the client will directly interact with it!
+        <br></br><br></br>
+            <link>
+                <text> Click here to learn more about Web Developers.</text>
+                <url>https://developer.mozilla.org/en-US/docs/Learn/Front-end_web_developer</url>
+            </link>
+            <button>
+                <text>Click here to explore the other careers.</text>
+                <postback>TOP5CSCAREERS</postback>
+            </button>
+        </template>
+    </category>
+    <category>
+        <pattern>WEBDEVELOPERJOB</pattern>
+        <template>We think you should consider becoming a Web Developer!
+        <br></br><br></br>Web Developers are involved with the building, creating, and maintaining of websites. You would be working on the client side of the website, as the client will directly interact with it!
+            <br></br><br></br>
+            <link>
+                <text> Click here to learn more about Web Developers.</text>
+                <url>https://developer.mozilla.org/en-US/docs/Learn/Front-end_web_developer</url>
+            </link>
+            <button>
+                <text>Click here to explore the other careers.</text>
+                <postback>TOP5CSCAREERS</postback>
+            </button>
+        </template>
+    </category>
+</aiml>

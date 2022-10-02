@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>TOP5CSCAREERS</pattern>
+        <template>Please select which career you'd like to learn more about.
+            <button>
+                <text>Web Developers</text>
+                <postback>ABOUTWEBDEVELOPERS</postback>
+            </button>
+            <button>
+                <text>Software Developers</text>
+                <postback>ABOUTSOFTWAREDEVELOPERS</postback>
+            </button>
+            <button>
+                <text>Mobile App Developers</text>
+                <postback>ABOUTMOBILEAPPDEVELOPERS</postback>
+            </button>
+            <button>
+                <text>Systems Architect</text>
+                <postback>ABOUTSYSTEMSARCHITECTS</postback>
+            </button>
+        </template>
+    </category>
+</aiml>

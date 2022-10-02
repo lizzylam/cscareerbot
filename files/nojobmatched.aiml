@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>NOJOBMATCHED</pattern>
+        <template>Hm, according to your responses you should speak with an advisor for further information. Please email csadvisors@wgu.edu or call 1-WGU-ADVIS to schedule an appointment.
+        </template>
+    </category>
+</aiml>
